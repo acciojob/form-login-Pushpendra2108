@@ -1,7 +1,7 @@
 function getFormvalue() {
-    //Write your code here
-	let firstName = document.form[form1][fname].value;
-	let lastName = document.form[form1][lname].value;
-	
-  alert( firstName + " " + lastName); 
+    let form = document.forms["form1"]; // Access the form using its name
+    let firstName = form["fname"].value; // Access the input field using its name
+    let lastName = form["lname"].value; // Access the input field using its name
+
+    alert(firstName + " " + lastName); 
 }
